@@ -10,10 +10,15 @@ This project is a face recognition-based attendance system that uses OpenCV and 
 
 ## Usage
 
-1. Collect the Faces Dataset by running ``` python get_faces_from_camera_tkinter.py``` .
-2. Convert the dataset into ```python features_extraction_to_csv.py```.
-3. To take the attendance run ```python attendance_taker.py``` .
-4. Check the Database by ```python app.py```.
+Run the dashboard from the project folder:
+
+```powershell
+python app.py
+```
+
+The dashboard opens in your default browser at `http://127.0.0.1:5000`. Use its **Register a new student** button to capture face images; when you close the registration window, the face recognition data is updated automatically. Use **Take attendance** to open the recognition camera, and use **Present students** to view attendance by date. Press `q` in the attendance camera window to end an attendance session.
+
+The camera actions open desktop windows, so run the dashboard on the same computer as the camera. Keep the terminal running while you use it.
 
 
 ## Contributing
